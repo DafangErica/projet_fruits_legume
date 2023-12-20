@@ -13,13 +13,15 @@ export default function App({navigation}) {
     return(
         <View style={styles.container}>
             <View style={styles.entete}>
-            <View style={{width:30,height:30,backgroundColor:'#fff',borderRadius:8,justifyContent:'center',marginTop:40,marginLeft:10}}>
             <TouchableOpacity onPress={()=> navigation.goBack()} style={{backgroundColor: 'rgba(255,255,255,0.2)'}} className="border border-gray-50 rounded-xl">
+
+            <View style={{width:30,height:30,backgroundColor:'#fff',borderRadius:8,justifyContent:'center',marginTop:40,marginLeft:10}}>
             <Text style={{fontSize:25,color:"#000",marginLeft:6,fontWeight:'bold'}}>&lt;</Text>              
 
-            </TouchableOpacity>
                 
             </View>
+            </TouchableOpacity>
+
             <Image source={panier} style={{width:40,height:40,marginTop:30,}}/>
 
             </View>
@@ -71,10 +73,11 @@ export default function App({navigation}) {
                 <Text style={{fontSize:30,textAlign:'right', marginRight:10,marginTop:30,fontWeight:'bold'}}> $40</Text>
 
             </View>
+            <TouchableOpacity onPress={()=>navigation.navigate('getStart') }>
             <View style={styles.paie}>
             <Text style={{fontSize:30,textAlign:'left', marginLeft:60,justifyContent:'center',color:'#fff'}}> payement</Text>
-
             </View>
+            </TouchableOpacity>
 
 
         </View>
@@ -142,7 +145,7 @@ export default function App({navigation}) {
 
         paie:{
             width:'70%',
-            height:'7%',
+            height:'25%',
             flexDirection:'row',
             backgroundColor:'pink',
             marginTop:5,
