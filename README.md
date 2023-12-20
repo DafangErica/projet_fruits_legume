@@ -1,0 +1,5 @@
+![IMG-20231220-WA0017](https://github.com/livine-stone/projet_fruits_legume/assets/131639758/4821cc93-2a1d-47fa-9bd1-de7dac47c800)
+![IMG-20231220-WA0016](https://github.com/livine-stone/projet_fruits_legume/assets/131639758/9de02560-de74-4161-8612-769b22a55e17)
+![IMG-20231220-WA0015](https://github.com/livine-stone/projet_fruits_legume/assets/131639758/e281b6f2-abb4-4eda-9c62-e36315fd9167)
+![IMG-20231220-WA0014](https://github.com/livine-stone/projet_fruits_legume/assets/131639758/fa4ecb63-2760-4390-bbfa-3fd5f4933286)
+![IMG-20231220-WA0013](https://github.com/livine-stone/projet_fruits_legume/assets/131639758/7177aaef-071f-4e09-b7b0-723315b3b871)
