@@ -29,14 +29,48 @@ export default function App() {
                     <Text style={{fontSize:20,marginLeft:40,marginTop:15}}> Orange</Text>
                     <Text style={{fontSize:20,marginLeft:40,marginTop:10}}> $10</Text>
                 </View>
-                    <Image source={delet} style={{width:60, height:30, marginRight:30, marginTop:}}/>
+                    <Image source={delet} style={{width:40, height:40, marginLeft:80, marginTop:20,borderRadius:10,backgroundColor:'grey'}}/>
                 
             </View>
-            <View style={styles.raisains}></View>
-            <View style={styles.bananes}></View>
-            <View style={styles.ananas}></View>
-            <View style={styles.prix}></View>
-            <View style={styles.paie}></View>
+            <View style={styles.raisains}>
+            <Image source={raisain} style={{ width:70,height:60, marginLeft:10, marginTop:15,borderRadius:15,backgroundColor:'#bbcfff'}}/>
+                <Text style={{fontSize:20,marginLeft:30,marginTop:30}}>1x</Text>
+                <View style={{flexDirection:'column'}}>
+                    <Text style={{fontSize:20,marginLeft:40,marginTop:15}}> Graphe</Text>
+                    <Text style={{fontSize:20,marginLeft:40,marginTop:10}}> $10</Text>
+                </View>
+                    <Image source={delet} style={{width:40, height:40, marginLeft:80, marginTop:20,borderRadius:10,backgroundColor:'grey'}}/>
+
+            </View>
+            <View style={styles.bananes}>
+            <Image source={banane} style={{ width:70,height:60, marginLeft:10, marginTop:15,borderRadius:15,backgroundColor:'#ffe569'}}/>
+                <Text style={{fontSize:20,marginLeft:30,marginTop:30}}>1x</Text>
+                <View style={{flexDirection:'column'}}>
+                    <Text style={{fontSize:20,marginLeft:40,marginTop:15}}> Banane</Text>
+                    <Text style={{fontSize:20,marginLeft:40,marginTop:10}}> $10</Text>
+                </View>
+                    <Image source={delet} style={{width:40, height:40, marginLeft:80, marginTop:20,borderRadius:10,backgroundColor:'grey'}}/>
+
+            </View>
+            <View style={styles.ananas}>
+            <Image source={ananas} style={{ width:70,height:60, marginLeft:10, marginTop:15,borderRadius:15,backgroundColor:'#ffe569'}}/>
+                <Text style={{fontSize:20,marginLeft:30,marginTop:30}}>1x</Text>
+                <View style={{flexDirection:'column'}}>
+                    <Text style={{fontSize:20,marginLeft:40,marginTop:15}}> ananas</Text>
+                    <Text style={{fontSize:20,marginLeft:40,marginTop:10}}> $10</Text>
+                </View>
+                    <Image source={delet} style={{width:40, height:40, marginLeft:80, marginTop:20,borderRadius:10,backgroundColor:'#7f8487'}}/>
+
+            </View>
+            <View style={styles.prix}>
+                <Text style={{fontSize:30,textAlign:'left', marginLeft:10,marginTop:30,fontWeight:'bold'}}> Total Price</Text>
+                <Text style={{fontSize:30,textAlign:'right', marginRight:10,marginTop:30,fontWeight:'bold'}}> $40</Text>
+
+            </View>
+            <View style={styles.paie}>
+            <Text style={{fontSize:30,textAlign:'left', marginLeft:60,justifyContent:'center',color:'#fff'}}> payement</Text>
+
+            </View>
 
 
         </View>
@@ -52,14 +86,12 @@ export default function App() {
             height:'10%',
             flexDirection:'row',
             justifyContent:"space-between",
-            backgroundColor:"green"
     
         },
         titre :{
             width:'100%',
             height:'10%',
             flexDirection:'row',
-            backgroundColor:'orange',
             marginTop:40
 
     
@@ -68,7 +100,6 @@ export default function App() {
             width:'100%',
             height:'10%',
             flexDirection:'row',
-            backgroundColor:'purple',
             marginTop:20,
 
     
@@ -77,7 +108,6 @@ export default function App() {
             width:'100%',
             height:'10%',
             flexDirection:'row',
-            backgroundColor:'yellow',
             marginTop:20
 
     
@@ -86,7 +116,6 @@ export default function App() {
             width:'100%',
             height:'10%',
             flexDirection:'row',
-            backgroundColor:'red',
             marginTop:20,
     
         },
@@ -94,8 +123,6 @@ export default function App() {
             width:'100%',
             height:'10%',
             flexDirection:'row',
-            backgroundColor:'pink',
-            marginTop:20
 
     
         },
@@ -103,18 +130,20 @@ export default function App() {
             width:'100%',
             height:'10%',
             flexDirection:'row',
-            backgroundColor:'red',
-            marginTop:50
+            marginTop:50,
+            justifyContent:'space-between'
 
     
         },
 
         paie:{
-            width:'100%',
-            height:'10%',
+            width:'70%',
+            height:'7%',
             flexDirection:'row',
-            backgroundColor:'yellow',
-            marginTop:5
+            backgroundColor:'pink',
+            marginTop:5,
+            marginLeft:50,
+            borderRadius:'20%'
     
         }
         
