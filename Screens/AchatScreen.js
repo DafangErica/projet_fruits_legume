@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, TextInput, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Image, TextInput, ScrollView,TouchableOpacity } from 'react-native';
 import React from 'react';
 const raisain = require('../assets/FRUITS/raisain.png');
 const banane = require('../assets/FRUITS/banane.png');
@@ -9,12 +9,16 @@ const delet=require('../assets/delete.png');
 
 
 
-export default function App() {
+export default function App({navigation}) {
     return(
         <View style={styles.container}>
             <View style={styles.entete}>
             <View style={{width:30,height:30,backgroundColor:'#fff',borderRadius:8,justifyContent:'center',marginTop:40,marginLeft:10}}>
-                <Text style={{fontSize:25,color:"#000",marginLeft:6,fontWeight:'bold'}}>&lt;</Text>              
+            <TouchableOpacity onPress={()=> navigation.goBack()} style={{backgroundColor: 'rgba(255,255,255,0.2)'}} className="border border-gray-50 rounded-xl">
+            <Text style={{fontSize:25,color:"#000",marginLeft:6,fontWeight:'bold'}}>&lt;</Text>              
+
+            </TouchableOpacity>
+                
             </View>
             <Image source={panier} style={{width:40,height:40,marginTop:30,}}/>
 

@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, Image, TextInput, ScrollView ,TouchableOpacity}
 import React from 'react';
 import { setStatusBarBackgroundColor } from 'expo-status-bar';
 
+
 // import  Icon from 'react-native-vector-icons/FontAwesome';
 // import lorem from '../composant/lorem';
 // import { LoremIpsumUI } from 'react-native-lorem-ipsum-ui';
@@ -12,7 +13,7 @@ const Orange = require('../assets/FRUITS/orange.png');
 
 
 
-export default function App() {
+export default function App({navigation}) {
   
     return (
         <View style={styles.container}>

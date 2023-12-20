@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TextInput, ScrollView,TouchableOpacity} from 'react-native';
 import React from 'react';
 import Profile from './ProfileScreen';
-// import { createStackNavigator } from '@react-navigation/stack';
+ import { createStackNavigator } from '@react-navigation/stack';
 // import { withNavigation } from 'react-navigation';
 
 
@@ -42,7 +42,7 @@ const Orange = require('../assets/FRUITS/orange.png');
 // const pommedeterre = require('./assets/tubercule/pommedeterre.png');
 
 
-export default function App() {
+export default function App({navigation}) {
   // const[value,setValue] =React.useState('');
 
   return (
@@ -168,6 +168,8 @@ export default function App() {
           marginTop:45
         }}>$10</Text>
        </View>
+      <TouchableOpacity onPress={()=>navigation.navigate('Profile') }>
+
         <View style={{
           display: 'flex',
           width: 50,
@@ -183,7 +185,7 @@ export default function App() {
              alignItems: 'center',
           marginLeft:30
           }}>
-          <Text style={{
+            <Text style={{
             marginTop: 3,
             paddingTop: 3,
             //  fontFamily: 'arial',
@@ -191,9 +193,12 @@ export default function App() {
             fontWeight: 'bold',
             color: '#fff'
           }}>Add</Text>
-
           </View>
         </View>
+
+
+            </TouchableOpacity>
+
       </View>
 
 
@@ -241,6 +246,8 @@ export default function App() {
           marginTop:45
         }}>$10</Text>
        </View>
+       <TouchableOpacity onPress={()=>navigation.navigate('Profile') }>
+
         <View style={{
           display: 'flex',
           width: 50,
@@ -248,7 +255,7 @@ export default function App() {
           borderRadius: 20,
           justifyContent:'center'
         }}>
-          <View style={{
+            <View style={{
              backgroundColor: '#080957',
              width: 90,
              height: 30,
@@ -267,6 +274,9 @@ export default function App() {
 
           </View>
         </View>
+
+            </TouchableOpacity>
+
       </View>
       <View style={{
         backgroundColor: '#fffb73',
@@ -311,7 +321,8 @@ export default function App() {
           marginTop:45
         }}>$15</Text>
        </View>
-        <View style={{
+       <TouchableOpacity onPress={()=>navigation.navigate('Profile') }>
+       <View style={{
           display: 'flex',
           width: 50,
           height: 40,
@@ -337,6 +348,9 @@ export default function App() {
 
           </View>
         </View>
+
+       </TouchableOpacity>
+
         
         </View>
         <View style={{
@@ -382,7 +396,8 @@ export default function App() {
           marginTop:45
         }}>$15</Text>
        </View>
-        <View style={{
+       <TouchableOpacity onPress={()=>navigation.navigate('Profile') }>
+       <View style={{
           display: 'flex',
           width: 50,
           height: 40,
@@ -408,6 +423,9 @@ export default function App() {
 
           </View>
         </View>
+
+       </TouchableOpacity>
+
         
         </View>
 
@@ -423,7 +441,11 @@ export default function App() {
 
 
       </View>
+      <TouchableOpacity onPress={()=>navigation.navigate('Achat') }>
       <Text style={{fontWeight:'bold', fontSize:20, marginTop:50,marginLeft:10}}>Nearby shop</Text>
+
+      </TouchableOpacity>
+
       {/* <TouchableOpacity onPress={()=>{navigation.navigate('ShopDetail')} } ></TouchableOpacity> */}
       <ScrollView horizontal={true} style={{flexDirection:'row',marginTop:20}}>
       <View style={{height:110,width:350,borderColor:'#FFCCD2',borderRadius:20,borderWidth:3,marginLeft:8,flexDirection:'row'}}>
@@ -448,6 +470,11 @@ export default function App() {
       <View style={{flex:1,flexDirection:'row',justifyContent:'space-between'}}>
         <Image source={home} style={styles.icon}/>
         <Image source={loupe} style={styles.icon}/>
+        <TouchableOpacity onPress={()=>navigation.navigate('Achat') }>
+        <Image source={panier} style={styles.icon}/>
+         
+        </TouchableOpacity>
+
         <Image source={panier} style={styles.icon}/>
         <Image source={personne} style={styles.icon}/>
 
